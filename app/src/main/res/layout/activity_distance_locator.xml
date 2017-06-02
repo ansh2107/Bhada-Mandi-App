@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/dist_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcc66"
+        android:ems="10"
+        android:hint="Enter source city"
+        android:paddingLeft="15dp"
+
+
+        android:textSize="30sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/dist_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ffcc66"
+        android:ems="10"
+        android:hint="Enter destination city"
+
+
+        android:paddingLeft="15dp"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dist_1"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Distance:"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/dist_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/dist_but"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="#FA0"
+        android:gravity="center"
+        android:hint="Submit"
+        android:textColor="#fff"
+        android:textSize="30dp" />
+</LinearLayout>

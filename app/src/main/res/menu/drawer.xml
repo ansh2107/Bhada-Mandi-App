@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_item_2"
+        android:icon="@drawable/composea"
+        android:title="Compose"></item>
+    <item
+        android:icon="@drawable/inbox"
+        android:title="Inbox"></item>
+    <item
+        android:icon="@drawable/senta"
+        android:title="Sent"></item>
+    <item
+        android:icon="@drawable/draft"
+        android:title="Drafts"></item>
+
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:icon="@drawable/spam"
+                android:title="Spam" />
+            <item
+                android:icon="@drawable/bin"
+                android:title="Bin" />
+        </menu>
+    </item>
+
+    <group android:id="@+id/shitss">
+
+        <item
+            android:icon="@drawable/settings"
+            android:title="Settings"></item>
+        <item
+            android:icon="@drawable/help"
+            android:title="Help"></item>
+    </group>
+
+
+</menu>

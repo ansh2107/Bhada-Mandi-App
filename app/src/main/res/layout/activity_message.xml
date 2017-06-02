@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/activity_reg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="vertical">
+
+        <EditText
+            android:id="@+id/broker_name"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:hint="Broker Name"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <AutoCompleteTextView
+            android:id="@+id/msg_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+
+            android:hint="From: "
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible">
+
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/msg_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_from"
+            android:ems="10"
+            android:hint="To: "
+            android:inputType="none"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/msg_vechile"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_to"
+            android:hint="Vechile No.: "
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/msg_wt"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_vechile"
+            android:hint="Weight/Quantity: "
+            android:inputType="text"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_vechile"
+            android:hint="Rate :"
+            android:inputType="text"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/msg_fri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_wt"
+            android:ems="10"
+            android:hint="Freight: "
+            android:inputType="text"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/msg_adv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_fri"
+            android:ems="10"
+            android:hint="Advance: "
+            android:inputType="number"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/msg_bal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_adv"
+            android:ems="10"
+            android:hint="Balance: "
+            android:inputType="number"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/msg_pan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/msg_bal"
+            android:ems="10"
+            android:hint="Owner Pan No : "
+            android:inputType="none"
+            android:linksClickable="false"
+            android:singleLine="true"
+
+            android:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/msg_mob2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_pan"
+            android:ems="10"
+            android:hint="Owner Mobile No : "
+            android:inputType="number"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/msg_mob1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_mob2"
+            android:ems="10"
+            android:hint="Driver Mobile No : "
+            android:inputType="number"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Bank Details"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_from"
+            android:ems="10"
+            android:hint="Bank Name"
+            android:inputType="none"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/account_holder_name"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_to"
+            android:hint="Account Holder Name"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/account_number"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/msg_vechile"
+            android:hint="Account No"
+            android:inputType="number"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/ifsc_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:hint="IFSC Code"
+            android:linksClickable="false"
+            android:singleLine="true"
+            android:visibility="visible">
+
+        </EditText>
+
+
+        <Button
+            android:id="@+id/message_act"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FA0"
+            android:text="Send Message" />
+
+    </LinearLayout>
+
+</ScrollView>
